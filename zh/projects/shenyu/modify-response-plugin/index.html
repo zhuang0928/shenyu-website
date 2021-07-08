@@ -24,8 +24,8 @@
 </code></pre><ul><li><p>选择器和规则，请详细看：<a href=../selector-and-rule>选择器规则</a>。</p><ul><li>只有匹配的请求，才会修改响应。</li></ul></li></ul><h2 id=修改响应插件使用指南>修改响应插件使用指南</h2><ul><li>1.配置选择器</li><li>2.配置规则</li><li>3.修改响应状态码
 <img src=/img/shenyu/plugin/modify-response/modifyStatus-cn.png alt></li><li>4.修改响应请求头
 <img src=/img/shenyu/plugin/modify-response/modifyHeader-cn.png alt></li><li>5.修改响应内容
-<img src=/img/shenyu/plugin/modify-response/modifyBody-cn.png alt></li><li>参数详情:<ul><li>addHeaders: 添加请求头，键值对形式</li><li>setHeaders: 添加请求头，键值对形式</li><li>replaceHeaderKeys: 替换请求头key的name，key是要被替换的值，value是替换后的值</li><li>removeHeaderKeys: 移除的请求头的key</li><li>statusCode: 响应状态码</li><li>addBodyKeys: 添加响应内容</li><li>replaceBodyKeys: 替换响应内容，key是要被替换的值，value是替换后的值</li><li>removeBodyKeys: 移除的响应内容的key</li></ul></li></ul><p>修改响应体是通过JSONPath来实现的，<code>$.</code> 代表根目录</p><p>上面的配置，插件开启前，响应内容为</p><pre><code class=language-json>&quot;id&quot;:3,&quot;name&quot;:&quot;hello world findById&quot;}
-</code></pre><p>插件开启后，响应内容为</p><pre><code class=language-json>&quot;id2&quot;:3,&quot;add&quot;:&quot;4&quot;}
+<img src=/img/shenyu/plugin/modify-response/modifyBody-cn.png alt></li><li>参数详情:<ul><li>addHeaders: 添加请求头，键值对形式</li><li>setHeaders: 添加请求头，键值对形式</li><li>replaceHeaderKeys: 替换请求头key的name，key是要被替换的值，value是替换后的值</li><li>removeHeaderKeys: 移除的请求头的key</li><li>statusCode: 响应状态码</li><li>addBodyKeys: 添加响应内容</li><li>replaceBodyKeys: 替换响应内容，key是要被替换的值，value是替换后的值</li><li>removeBodyKeys: 移除的响应内容的key</li></ul></li></ul><p>修改响应体是通过JSONPath来实现的，<code>$.</code> 代表根目录</p><p>上面的配置，插件开启前，响应内容为</p><pre><code class=language-json>{&quot;id&quot;:3,&quot;name&quot;:&quot;hello world findById&quot;}
+</code></pre><p>插件开启后，响应内容为</p><pre><code class=language-json>{&quot;id2&quot;:3,&quot;add&quot;:&quot;4&quot;}
 </code></pre></article></main></div><footer class=ss-footer><div class=container><div class=links><div class="cate  -show-mobile"><h2 class=cate-title>Apache</h2><a class=link href=https://www.apache.org/>Foundation</a>
 <a class=link href=https://github.com/apache/incubator-shenyu/issues>GitHub Issue Tracker</a>
 <a class=link href=https://www.apache.org/licenses/>License</a>
