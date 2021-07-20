@@ -139,10 +139,10 @@ diff -r -x &quot;shenyu-dashboard&quot; -x &quot;shenyu-examples&quot; -x &quot;
 <code>apache-shenyu-incubating-${RELEASE.VERSION}-bootstrap-bin.tar.gz</code>，
 <code>apache-shenyu-incubating-${RELEASE.VERSION}-admin-bin.tar.gz</code>
 进行如下检查:</p><ul><li>文件夹包含单词<code>incubating</code></li><li>存在<code>LICENSE</code>和<code>NOTICE</code>文件</li><li>存在<code>DISCLAIMER</code>文件</li><li><code>NOTICE</code>文件中的年份正确</li><li>所有文本文件开头都有ASF许可证</li><li>检查第三方依赖许可证：<ul><li>第三方依赖的许可证兼容</li><li>所有第三方依赖的许可证都在<code>LICENSE</code>文件中声名</li><li>依赖许可证的完整版全部在<code>license</code>目录</li><li>如果依赖的是Apache许可证并且存在<code>NOTICE</code>文件，那么这些<code>NOTICE</code>文件也需要加入到版本的<code>NOTICE</code>文件中</li></ul></li></ul><h2 id=发起投票>发起投票</h2><p><strong>投票阶段</strong></p><ol><li><p>ShenYu社区投票，发起投票邮件到<code>dev@shenyu.apache.org</code>。PMC需要先按照文档检查版本的正确性，然后再进行投票。
-经过至少72小时并统计到3个<code>+1 PMC member</code>票后，即可进入下一阶段的投票。</p></li><li><p>宣布投票结果,发起投票结果邮件到<code>dev@shenyu.apache.org</code>。</p></li></ol><p><strong>投票模板</strong></p><ol><li>ShenYu社区投票模板</li></ol><p>标题：</p><pre><code>[VOTE] Release Apache ShenYu ${RELEASE.VERSION}
+经过至少72小时并统计到3个<code>+1 PMC member</code>票后，即可进入下一阶段的投票。</p></li><li><p>宣布投票结果,发起投票结果邮件到<code>dev@shenyu.apache.org</code>。</p></li></ol><p><strong>投票模板</strong></p><ol><li>ShenYu社区投票模板</li></ol><p>标题：</p><pre><code>[VOTE] Release Apache ShenYu (incubating) ${RELEASE.VERSION}
 </code></pre><p>正文：</p><pre><code>Hello ShenYu Community,
 
-This is a call for vote to release Apache ShenYu version ${RELEASE.VERSION}
+This is a call for vote to release Apache ShenYu (incubating) version ${RELEASE.VERSION}
 
 Release notes:
 https://github.com/apache/incubator-shenyu/blob/master/RELEASE-NOTES.md
@@ -191,7 +191,7 @@ Checklist for reference:
 [ ] All files have license headers if necessary.
 
 [ ] No compiled archives bundled in source archive.
-</code></pre><ol><li>宣布投票结果模板：</li></ol><p>标题：</p><pre><code>[RESULT][VOTE] Release Apache ShenYu ${RELEASE.VERSION}
+</code></pre><ol><li>宣布投票结果模板：</li></ol><p>标题：</p><pre><code>[RESULT][VOTE] Release Apache ShenYu (incubating) ${RELEASE.VERSION}
 </code></pre><p>正文：</p><pre><code>We’ve received 3 +1 votes:
 
 +1, xxx (mentor)
@@ -217,12 +217,12 @@ docker tag e9ea51023687 apache/shenyu-bootstrap:${RELEASE.VERSION}
 </code></pre><p>5.4 发布 Docker 镜像</p><pre><code class=language-shell>docker login
 docker push apache/shenyu-bootstrap:latest
 docker push apache/shenyu-bootstrap:${RELEASE_VERSION}
-</code></pre><p>5.5 确认发布成功</p><p>登录 <a href=https://hub.docker.com/r/apache/shenyu-bootstrap/>Docker Hub</a> 查看是否有发布的镜像</p><p><strong>6. GitHub版本发布</strong></p><p>在 <a href=https://github.com/apache/incubator/shenyu/releases>GitHub Releases</a> 页面的 <code>${RELEASE_VERSION}</code> 版本上点击 <code>Edit</code></p><p>编辑版本号及版本说明，并点击 <code>Publish release</code></p><p><strong>7. 更新下载页面</strong></p><p>等待并确认新的发布版本同步至 Apache 镜像后，更新如下页面：</p><p><a href=https://shenyu.apache.org/projects/shenyu/download/>https://shenyu.apache.org/projects/shenyu/download/</a></p><p><a href=https://shenyu.apache.org/zh/projects/shenyu/download/>https://shenyu.apache.org/zh/projects/shenyu/download/</a></p><p>GPG签名文件和哈希校验文件的下载连接应该使用这个前缀：<code>https://downloads.apache.org/incubator/shenyu/</code></p><p><strong>8. 邮件通知版本发布完成</strong></p><p>发送邮件到<code>dev@shenyu.apache.org</code>和<code>announce@apache.org</code>通知完成版本发布</p><p>通知邮件模板：</p><p>标题：</p><pre><code>[ANNOUNCE] Apache ShenYu ${RELEASE.VERSION} available
+</code></pre><p>5.5 确认发布成功</p><p>登录 <a href=https://hub.docker.com/r/apache/shenyu-bootstrap/>Docker Hub</a> 查看是否有发布的镜像</p><p><strong>6. GitHub版本发布</strong></p><p>在 <a href=https://github.com/apache/incubator/shenyu/releases>GitHub Releases</a> 页面的 <code>${RELEASE_VERSION}</code> 版本上点击 <code>Edit</code></p><p>编辑版本号及版本说明，并点击 <code>Publish release</code></p><p><strong>7. 更新下载页面</strong></p><p>等待并确认新的发布版本同步至 Apache 镜像后，更新如下页面：</p><p><a href=https://shenyu.apache.org/projects/shenyu/download/>https://shenyu.apache.org/projects/shenyu/download/</a></p><p><a href=https://shenyu.apache.org/zh/projects/shenyu/download/>https://shenyu.apache.org/zh/projects/shenyu/download/</a></p><p>GPG签名文件和哈希校验文件的下载连接应该使用这个前缀：<code>https://downloads.apache.org/incubator/shenyu/</code></p><p><strong>8. 邮件通知版本发布完成</strong></p><p>发送邮件到<code>dev@shenyu.apache.org</code>和<code>announce@apache.org</code>通知完成版本发布</p><p>通知邮件模板：</p><p>标题：</p><pre><code>[ANNOUNCE] Apache ShenYu (incubating) ${RELEASE.VERSION} available
 </code></pre><p>正文：</p><pre><code>Hi all,
 
-Apache ShenYu Team is glad to announce the new release of Apache ShenYu ${RELEASE.VERSION}.
+Apache ShenYu (incubating) Team is glad to announce the new release of Apache ShenYu (incubating) ${RELEASE.VERSION}.
 
-Apache ShenYu is an asynchronous, high-performance, cross-language, responsive API gateway.
+Apache ShenYu (incubating) is an asynchronous, high-performance, cross-language, responsive API gateway.
 Support various languages (http protocol), support Dubbo, Spring-Cloud, Grpc, Motan, Sofa, Tars and other protocols.
 Plugin design idea, plugin hot swap, easy to expand.
 Flexible flow filtering to meet various flow control.
@@ -243,7 +243,7 @@ ShenYu Resources:
 
 
 
-- Apache ShenYu Team
+- Apache ShenYu (incubating) Team
 
 </code></pre></article></main></div><footer class=ss-footer><div class=container><div class=links><div class="cate  -show-mobile"><h2 class=cate-title>Apache</h2><a class=link href=https://www.apache.org/>Foundation</a>
 <a class=link href=https://github.com/apache/incubator-shenyu/issues>GitHub Issue Tracker</a>
