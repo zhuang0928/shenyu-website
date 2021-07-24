@@ -41,8 +41,8 @@ Divide plugin，cooperate with starter to take effect，please refer to：user-h
 Http client，please refer to：Http proxy。
 Plug-in details The divide plugin is a plugin for forward proxying of http. All requests of the http type are called by the plugin for load balancing.
 After the client connects to the ShenYu gateway, it will automatically register the selector and rule information.</description></item><item><title>Doc Download</title><link>/projects/shenyu-2.3.0/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/shenyu-2.3.0/download/</guid><description>PDF English 中文</description></item><item><title>Doc Download</title><link>/projects/shenyu/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/shenyu/download/</guid><description>Latest Releases Apache ShenYu is released as source code tarballs with corresponding binary tarballs for convenience.
-Apache Shenyu - Version: 2.3.0 ( Release Date: Apr 2, 2020 )
-Source Codes: zip tar ShenYu-admin Binary Distribution: tar ShenYu-bootstrap Binary Distribution: tar Apache Shenyu Dashboard - Version: 2.3.0 ( Release Date: Apr 2, 2020 )
+Apache ShenYu - Version: 2.3.0 ( Release Date: Apr 2, 2020 )
+Source Codes: zip tar ShenYu-admin Binary Distribution: tar ShenYu-bootstrap Binary Distribution: tar Apache ShenYu Dashboard - Version: 2.3.0 ( Release Date: Apr 2, 2020 )
 Source Codes: zip tar ShenYu-dashboard Binary Distribution: tar PDF Apache ShenYu provides a packaged and downloaded PDF of the blog for users and developers to use.</description></item><item><title>Docker Deployment</title><link>/projects/shenyu/deployment-docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/shenyu/deployment-docker/</guid><description>This article introduces the use of docker to deploy the Apache ShenYu gateway.
 Start Apache ShenYu Admin &amp;gt; docker pull apache/shenyu-admin &amp;gt; docker network create shenyu use h2 to store data:
 &amp;gt; docker run -d -p 9095:9095 --net shenyu apache/shenyu-admin use MySQL to store data, copy mysql-connector.jar to /$(your_work_dir)/ext-lib：
