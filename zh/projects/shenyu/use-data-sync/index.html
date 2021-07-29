@@ -64,7 +64,7 @@
   sync:
     http:
       enabled: true
-</code></pre><p><img src=/img/shenyu/dataSync/shenyu-data-sync-admin-http-yml.png width=80% height=70%></p><p>使用<code>Http长轮询</code>进行数据同步，会让网关很轻量，但时效性略低。它是根据分组<code>key</code>来拉取，如果数据量过大，过多，会有一定的影响。 原因是一个组下面的一个小地方更改，都会拉取整个组的数据。</p><h3 id=nacos同步配置>Nacos同步配置</h3><ul><li><code>ShenYu</code>网关配置</li></ul><p>首先在 <code>pom.xml</code> 文件中引入以下依赖：</p><pre><code class=language-xml>        &lt;!--shenyu data sync start use nacos--&gt;
+</code></pre><p><img src=/img/shenyu/dataSync/shenyu-data-sync-admin-http-yml.png width=80% height=70%></p><p>使用<code>Http长轮询</code>进行数据同步，会让网关很轻量，但时效性略低。它是根据分组<code>key</code>来拉取，如果数据量过大，过多，会有一定的影响。原因是一个组下面的一个小地方更改，都会拉取整个组的数据。</p><h3 id=nacos同步配置>Nacos同步配置</h3><ul><li><code>ShenYu</code>网关配置</li></ul><p>首先在 <code>pom.xml</code> 文件中引入以下依赖：</p><pre><code class=language-xml>        &lt;!--shenyu data sync start use nacos--&gt;
         &lt;dependency&gt;
             &lt;groupId&gt;org.apache.shenyu&lt;/groupId&gt;
             &lt;artifactId&gt;shenyu-spring-boot-starter-sync-data-nacos&lt;/artifactId&gt;

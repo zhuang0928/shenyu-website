@@ -112,12 +112,12 @@
 </code></pre><ul><li>apache dubbo 用户</li></ul><p>如果是<code>springboot</code>构建，引入以下依赖：</p><pre><code class=language-xml>&lt;dependency&gt;
      &lt;groupId&gt;org.apache.shenyu&lt;/groupId&gt;
      &lt;artifactId&gt;shenyu-spring-boot-starter-client-apache-dubbo&lt;/artifactId&gt;
-     &lt;version&gt;${last.version}&lt;/version&gt;
+     &lt;version&gt;${shenyu.version}&lt;/version&gt;
 &lt;/dependency&gt;
 </code></pre><p>如果是<code>spring</code>构建，引入以下依赖：</p><pre><code class=language-xml>&lt;dependency&gt;
    &lt;groupId&gt;org.apache.shenyu&lt;/groupId&gt;
    &lt;artifactId&gt;shenyu-client-apache-dubbo&lt;/artifactId&gt;
-   &lt;version&gt;${last.version}&lt;/version&gt;
+   &lt;version&gt;${shenyu.version}&lt;/version&gt;
 &lt;/dependency&gt;
 </code></pre><p>并在你的 <code>bean</code> 定义的 <code>xml</code> 文件中新增如下 ：</p><pre><code class=language-xml>  &lt;bean id =&quot;apacheDubboServiceBeanPostProcessor&quot; class =&quot;org.apache.shenyu.client.apache.dubbo.ApacheDubboServiceBeanPostProcessor&quot;&gt;
        &lt;constructor-arg ref=&quot;shenyuRegisterCenterConfig&quot;/&gt;
@@ -135,7 +135,7 @@
         &lt;/property&gt;
   &lt;/bean&gt;
 </code></pre><h2 id=dubbo-插件设置>dubbo 插件设置</h2><ul><li><p>首先在 <code>shenyu-admin</code> 插件管理中，把<code>dubbo</code> 插件设置为开启。</p></li><li><p>其次在 <code>dubbo</code> 插件中配置你的注册地址，或者其他注册中心的地址。</p></li></ul><pre><code class=language-yaml>{&quot;register&quot;:&quot;zookeeper://localhost:2181&quot;}   or {&quot;register&quot;:&quot;nacos://localhost:8848&quot;}
-</code></pre><h2 id=接口注册到网关>接口注册到网关</h2><ul><li><p>在 <code>dubbo</code> 服务实现类的方法上加上 <code>@ShenyuDubboClient</code> 注解，表示该接口方法注册到网关。</p></li><li><p>启动你的提供者，成功启动后，进入后台管理系统的<code>插件列表 -&gt; rpc proxy -&gt; springCloud</code>，会看到自动注册的选择器和规则信息。</p></li></ul><h2 id=dubbo用户请求及参数说明>dubbo用户请求及参数说明</h2><p>可以通过 <code>http</code> 的方式来请求你的 <code>dubbo</code> 服务。<code>ShenYu</code> 网关需要有一个路由前缀，这个路由前缀就是你接入项目进行配置 <code>contextPath</code></p><blockquote><p>比如你有一个 order服务 它有一个接口，它的注册路径 /order/test/save</p><p>现在就是通过 post 方式请求网关：<a href=http://localhost:9195/order/test/save>http://localhost:9195/order/test/save</a></p><p>其中 localhost:9195 为网关的 ip 端口，默认端口是 9195 ，/order 是你 dubbo 接入网关配置的 contextPath</p></blockquote><ul><li><p>参数传递：</p><ul><li><p>通过 <code>http</code>协议， <code>post</code> 方式访问网关，通过在<code>http body</code>中传入<code>json</code>类型参数。</p></li><li><p>更多参数类型传递，可以参考 <a href=https://github.com/apache/incubator-shenyu/tree/master/shenyu-examples/shenyu-examples-dubbo>shenyu-examples-dubbo</a> 中的接口定义，以及参数传递方式。</p></li></ul></li><li><p>单个 <code>java bean</code>参数类型（默认）</p></li><li><p>多参数类型支持，在网关的<code>yaml</code> 配置中新增如下配置：</p></li></ul><pre><code class=language-yaml>shenyu:
+</code></pre><h2 id=接口注册到网关>接口注册到网关</h2><ul><li><p>在 <code>dubbo</code> 服务实现类的方法上加上 <code>@ShenyuDubboClient</code> 注解，表示该接口方法注册到网关。</p></li><li><p>启动你的提供者，成功启动后，进入后台管理系统的<code>插件列表 -&gt; rpc proxy -&gt; dubbo</code>，会看到自动注册的选择器和规则信息。</p></li></ul><h2 id=dubbo用户请求及参数说明>dubbo用户请求及参数说明</h2><p>可以通过 <code>http</code> 的方式来请求你的 <code>dubbo</code> 服务。<code>ShenYu</code> 网关需要有一个路由前缀，这个路由前缀就是你接入项目进行配置 <code>contextPath</code></p><blockquote><p>比如你有一个 order服务 它有一个接口，它的注册路径 /order/test/save</p><p>现在就是通过 post 方式请求网关：<a href=http://localhost:9195/order/test/save>http://localhost:9195/order/test/save</a></p><p>其中 localhost:9195 为网关的 ip 端口，默认端口是 9195 ，/order 是你 dubbo 接入网关配置的 contextPath</p></blockquote><ul><li><p>参数传递：</p><ul><li><p>通过 <code>http</code>协议， <code>post</code> 方式访问网关，通过在<code>http body</code>中传入<code>json</code>类型参数。</p></li><li><p>更多参数类型传递，可以参考 <a href=https://github.com/apache/incubator-shenyu/tree/master/shenyu-examples/shenyu-examples-dubbo>shenyu-examples-dubbo</a> 中的接口定义，以及参数传递方式。</p></li></ul></li><li><p>单个 <code>java bean</code>参数类型（默认）</p></li><li><p>多参数类型支持，在网关的<code>yaml</code> 配置中新增如下配置：</p></li></ul><pre><code class=language-yaml>shenyu:
     dubbo:
       parameter: multi
 </code></pre><ul><li><p>自定义实现多参数支持:</p><ul><li>在你搭建的网关项目中，新增一个类 <code>MyDubboParamResolveService</code>，实现 <code>org.apache.shenyu.web.dubbo.DubboParamResolveService</code>接口。</li></ul><pre><code class=language-java>public interface DubboParamResolveService {
@@ -205,7 +205,7 @@ public class TestServiceImpl implements TestService {
     &quot;message&quot;: &quot;Internal Server Error&quot;,
     &quot;data&quot;: &quot;Param binding error.&quot;
 }
-</code></pre><h2 id=http-网关-dubbo-provider>http &ndash;&gt; 网关 &ndash;&gt; dubbo provider</h2><p>实际上就是把 <code>http</code> 请求，转成 <code>dubbo</code> 协议，内部使用 <code>dubbo 泛化</code>来进行调用。
+</code></pre><h2 id=http-网关-dubbo-provider>Http &ndash;&gt; 网关 &ndash;&gt; Dubbo Provider</h2><p>实际上就是把 <code>http</code> 请求，转成 <code>dubbo</code> 协议，内部使用 <code>dubbo 泛化</code>来进行调用。
 <code>dubbo</code> 服务在接入网关的时候，加上了 <code>@ShenyuDubboClient</code> 注解，并设置了 <code>path</code> 字段来指定请求路径。
 然后在<code>yml</code>中配置了 <code>contextPath</code>。</p><p>假如有一个这样的方法, <code>contextPath</code> 配置的是 <code>/dubbo</code>。</p><pre><code class=language-java>@Override
 @ShenyuDubboClient(path = &quot;/insert&quot;, desc = &quot;插入一条数据&quot;)
