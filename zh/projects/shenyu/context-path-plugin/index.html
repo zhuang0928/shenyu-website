@@ -21,7 +21,7 @@
      &lt;version&gt;${project.version}&lt;/version&gt;
   &lt;/dependency&gt;
   &lt;!-- shenyu context_path plugin end--&gt;
-</code></pre><ul><li>选择器和规则，请详细看：<a href=../selector-and-rule>选择器规则</a>。</li><li>只有匹配的请求，并且配置规则才会进行重写contextPath。</li></ul><h2 id=场景>场景</h2><ul><li>顾名思义，context_path插件就是对uri的<code>contextPath</code>重新定义。</li><li>当匹配到请求后，设置自定义的<code>contextPath</code>，那么就会根据请求的Url截取自定义的<code>contextPath</code>获取真正的Url，例如请求路径为<code>/shenyu/http/order</code>，
+</code></pre><ul><li>选择器和规则设置，请参考：<a href=../selector-and-rule>选择器和规则管理</a>。</li><li>只有匹配的请求，并且配置规则才会进行重写<code>contextPath</code>。</li></ul><h2 id=场景>场景</h2><ul><li>顾名思义，<code>context_path</code>插件就是对uri的<code>contextPath</code>重新定义。</li><li>当匹配到请求后，设置自定义的<code>contextPath</code>，那么就会根据请求的Url截取自定义的<code>contextPath</code>获取真正的Url，例如请求路径为<code>/shenyu/http/order</code>，
 配置的contextPath为<code>/shenyu/http</code>，那么真正请求的url为<code>/order</code>。</li></ul></article></main></div><footer class=ss-footer><div class=container><div class=links><div class="cate  -show-mobile"><h2 class=cate-title>Apache</h2><a class=link href=https://www.apache.org/>Foundation</a>
 <a class=link href=https://github.com/apache/incubator-shenyu/issues>GitHub Issue Tracker</a>
 <a class=link href=https://www.apache.org/licenses/>License</a>
