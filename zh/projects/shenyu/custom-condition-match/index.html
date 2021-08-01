@@ -21,10 +21,33 @@
     return true;
   }
 }
-</code></pre></li><li><p>在项目 <code>resources</code> 目录下，新建 META-INF/shenyu目录， 并且新增文件名为 : <code>org.apache.shenyu.plugin.base.condition.strategy.MatchStrategy</code>.
+</code></pre></li><li><p>在项目 <code>resources</code> 目录下，新建 <code>META-INF/shenyu</code> 目录， 并且新增文件名为 : <code>org.apache.shenyu.plugin.base.condition.strategy.MatchStrategy</code>.
 内容新增 <code>${you spi name}</code> = <code>${you class path}</code>:</p><pre><code>${you spi name} = ${you class path}
-</code></pre></li><li><p>在Admin后台 &mdash;&gt; 基础管理 &mdash;&gt; 字典管理 , 找到字典编码为 <code>MATCH_MODE</code>，新增一条数据，注意字典名称要为: <code>${you spi name}</code>。</p></li></ul><p><img src=/img/shenyu/custom/custmo-condition-match-zh.png width=40% height=30%></p><ul><li><p>或者执行以下自定义<code>SQL</code>语句：</p><pre><code>INSERT IGNORE INTO `shenyu_dict` (`id`, `type`,`dict_code`, `dict_name`, `dict_value`, `desc`, `sort`, `enabled`, `date_created`, `date_updated`) VALUES ('you id', 'matchMode', 'MATCH_MODE', 'you spi name', 'you value', 'you spi name', 0, 1, '2021-05-30 19:29:10', '2021-05-30 20:15:23');
-</code></pre></li></ul></article></main></div><footer class=ss-footer><div class=container><div class=links><div class="cate  -show-mobile"><h2 class=cate-title>Apache</h2><a class=link href=https://www.apache.org/>Foundation</a>
+</code></pre></li><li><p>在 <code>Admin</code> 后台 &mdash;&gt; 基础管理 &mdash;&gt; 字典管理 , 找到字典编码为 <code>MATCH_MODE</code>，新增一条数据，注意字典名称要为: <code>${you spi name}</code>。</p></li></ul><p><img src=/img/shenyu/custom/custmo-condition-match-zh.png width=40% height=30%></p><ul><li>或者执行以下自定义<code>SQL</code>语句：</li></ul><pre><code class=language-sql>INSERT IGNORE INTO `shenyu_dict` (
+        `id`,
+        `type`,
+        `dict_code`,
+        `dict_name`,
+        `dict_value`,
+        `desc`,
+        `sort`,
+        `enabled`,
+        `date_created`,
+        `date_updated`
+    )
+VALUES (
+        'you id',
+        'matchMode',
+        'MATCH_MODE',
+        'you spi name',
+        'you value',
+        'you spi name',
+        0,
+        1,
+        '2021-05-30 19:29:10',
+        '2021-05-30 20:15:23'
+    );
+</code></pre></article></main></div><footer class=ss-footer><div class=container><div class=links><div class="cate  -show-mobile"><h2 class=cate-title>Apache</h2><a class=link href=https://www.apache.org/>Foundation</a>
 <a class=link href=https://github.com/apache/incubator-shenyu/issues>GitHub Issue Tracker</a>
 <a class=link href=https://www.apache.org/licenses/>License</a>
 <a class=link href=https://www.apache.org/security/>Security</a>

@@ -134,17 +134,7 @@
           return orderDTO;
       }
   }
-</code></pre><ul><li>After successfully registering your service, go to the backend management system PluginList -&gt; rpc proxy -&gt; springCloud &lsquo;, you will see the automatic registration of selectors and rules information.</li></ul><h2 id=user-request>User Request</h2><ul><li><p>Send the request as before, only two points need to notice.</p></li><li><p>firstly,the domain name that requested before in your service, now need to replace with gateway&rsquo;s domain name.</p></li><li><p>secondly, Apache ShenYu gateway needs a route prefix which comes from <code>contextPath</code>, it configured during the integration with gateway, you can change it freely in divide plugin of <code>shenyu-admin</code>, if your familiar with it.</p></li></ul><pre><code class=language-yaml>
-For example, your have an order service and it has a interface, the request url: http://localhost:8080/test/save .
-
-Now need to change to：http://localhost:9195/order/test/save .
-
-We can see localhost:9195 is the gateway's ip port, default port number is 9195 , /order is the contextPath in your config yaml file.
-
-The request of other parameters don't change. Then you can visit, very easy and simple.
-
-
-</code></pre></article></main></div><footer class=ss-footer><div class=container><div class=links><div class="cate  -show-mobile"><h2 class=cate-title>Apache</h2><a class=link href=https://www.apache.org/>Foundation</a>
+</code></pre><ul><li>After successfully registering your service, go to the backend management system PluginList -&gt; rpc proxy -&gt; springCloud &lsquo;, you will see the automatic registration of selectors and rules information.</li></ul><h2 id=user-request>User Request</h2><ul><li><p>Send the request as before, only two points need to notice.</p></li><li><p>firstly,the domain name that requested before in your service, now need to replace with gateway&rsquo;s domain name.</p></li><li><p>secondly, Apache ShenYu gateway needs a route prefix which comes from <code>contextPath</code>, it configured during the integration with gateway, you can change it freely in divide plugin of <code>shenyu-admin</code>, if your familiar with it.</p></li></ul><blockquote><p>For example, your have an <code>order</code> service and it has a interface, the request url: <code>http://localhost:8080/test/save</code> .</p><p>Now need to change to：<code>http://localhost:9195/order/test/save</code> .</p><p>We can see <code>localhost:9195</code> is the gateway&rsquo;s ip port, default port number is <code>9195</code> , <code>/order</code> is the <code>contextPath</code> in your config yaml file.</p><p>The request of other parameters doesn&rsquo;t change. Then you can visit, very easy and simple.</p></blockquote></article></main></div><footer class=ss-footer><div class=container><div class=links><div class="cate  -show-mobile"><h2 class=cate-title>Apache</h2><a class=link href=https://www.apache.org/>Foundation</a>
 <a class=link href=https://github.com/apache/incubator-shenyu/issues>GitHub Issue Tracker</a>
 <a class=link href=https://www.apache.org/licenses/>License</a>
 <a class=link href=https://www.apache.org/security/>Security</a>
