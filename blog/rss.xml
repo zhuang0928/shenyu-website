@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Apache ShenYu (Incubating) Blog</title>
+        <link>https://shenyu.apache.org/blog</link>
+        <description>Apache ShenYu (Incubating) Blog</description>
+        <lastBuildDate>Fri, 20 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Context-Path插件源码分析]]></title>
+            <link>https://shenyu.apache.org/blog/test</link>
+            <guid>test</guid>
+            <pubDate>Fri, 20 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Demo跑起来]]></description>
+        </item>
+    </channel>
+</rss>
