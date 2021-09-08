@@ -4,22 +4,29 @@
         <title>Apache ShenYu (Incubating) Blog</title>
         <link>https://shenyu.apache.org/blog</link>
         <description>Apache ShenYu (Incubating) Blog</description>
-        <lastBuildDate>Sun, 05 Sep 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 06 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[Param-Mapping插件源码分析]]></title>
-            <link>https://shenyu.apache.org/blog/2021/09/05/Code-Analysis-Param-Mapping-Plugin</link>
-            <guid>Param-Mapping插件源码分析</guid>
-            <pubDate>Sun, 05 Sep 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[跑Demo]]></description>
+            <title><![CDATA[Apache ShenYu Start Demo]]></title>
+            <link>https://shenyu.apache.org/blog/start-demo</link>
+            <guid>start-demo</guid>
+            <pubDate>Mon, 06 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Environmental preparation]]></description>
         </item>
         <item>
-            <title><![CDATA[Context-Path插件源码分析]]></title>
-            <link>https://shenyu.apache.org/blog/test</link>
-            <guid>test</guid>
+            <title><![CDATA[Code Analysis For Param-Mapping Plugin]]></title>
+            <link>https://shenyu.apache.org/blog/code-analysis-param-mapping</link>
+            <guid>code-analysis-param-mapping</guid>
+            <pubDate>Sun, 05 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Before starting, you can refer to this article to start the gateway]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Code Analysis For Context-Path Plugin]]></title>
+            <link>https://shenyu.apache.org/blog/code-analysis-context-path</link>
+            <guid>code-analysis-context-path</guid>
             <pubDate>Fri, 20 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Demo跑起来]]></description>
+            <description><![CDATA[Before starting, you can refer to this article to start the gateway]]></description>
         </item>
     </channel>
 </rss>
