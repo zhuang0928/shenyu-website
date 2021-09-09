@@ -22,6 +22,13 @@
             <description><![CDATA[【Release the first version of Apache ShenYu(Incubating)2.4.0】 Make API gateway easy]]></description>
         </item>
         <item>
+            <title><![CDATA[[How I became an Apache ShenYu Committer one year after graduation]]]></title>
+            <link>https://shenyu.apache.org/news/Apache-ShenYu-Committer-2021-07-27</link>
+            <guid>[How I became an Apache ShenYu Committer one year after graduation]</guid>
+            <pubDate>Tue, 27 Jul 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[How I became an Apache ShenYu Committer one year after graduation]]></description>
+        </item>
+        <item>
             <title><![CDATA[【Soul gateway release milestone version 2.3.0】New support for grpc, tars and sofa protocols!]]></title>
             <link>https://shenyu.apache.org/news/Soul-gateway-release-milestone-version-2.3.0</link>
             <guid>【Soul gateway release milestone version 2.3.0】New support for grpc, tars and sofa protocols!</guid>

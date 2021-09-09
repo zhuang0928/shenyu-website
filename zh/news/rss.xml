@@ -22,6 +22,13 @@
             <description><![CDATA[发布Apache首个版本-2.4.0，让API网关变得简单]]></description>
         </item>
         <item>
+            <title><![CDATA[【毕业一年我是如何成为Apache ShenYu Committer】]]></title>
+            <link>https://shenyu.apache.org/zh/news/Apache-ShenYu-Committer-2021-07-27</link>
+            <guid>【毕业一年我是如何成为Apache ShenYu Committer】</guid>
+            <pubDate>Tue, 27 Jul 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[毕业一年成长成为Apache ShenYu Committer]]></description>
+        </item>
+        <item>
             <title><![CDATA[【Soul 网关发布里程碑的2.3.0版本】新增支持GRPC，Tars，Sofa协议]]></title>
             <link>https://shenyu.apache.org/zh/news/Soul-gateway-release-milestone-version-2.3.0</link>
             <guid>【Soul 网关发布里程碑的2.3.0版本】新增支持GRPC，Tars，Sofa协议</guid>
