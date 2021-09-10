@@ -4,14 +4,14 @@
         <title>Apache ShenYu (Incubating) Blog</title>
         <link>https://shenyu.apache.org/zh/blog</link>
         <description>Apache ShenYu (Incubating) Blog</description>
-        <lastBuildDate>Fri, 10 Sep 2021 07:48:38 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 Sep 2021 07:51:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[PredicateJudge-- 基于SPI的设计实现分析]]></title>
             <link>https://shenyu.apache.org/zh/blog/PredicateJudge-SPI</link>
             <guid>PredicateJudge-SPI</guid>
-            <pubDate>Fri, 10 Sep 2021 07:48:38 GMT</pubDate>
+            <pubDate>Fri, 10 Sep 2021 07:51:32 GMT</pubDate>
             <description><![CDATA[灵活的插件和规则定义，是Shenyu网关的一大特色。它以插件形式支持多种网络协议和多种流行的微服务框架，如Dubbo, gRPC和 Spring-Cloud 等。 为了实现对各种协议及插件的配置规则的解析，网关在规则策略解析方面，采用了优雅的SPI(Service Provider Interface)实现，当添加新的插件时，规则解析部分可以沿用现有实现或采用SPI机制快速实现，具有良好的可扩展性。]]></description>
         </item>
         <item>
