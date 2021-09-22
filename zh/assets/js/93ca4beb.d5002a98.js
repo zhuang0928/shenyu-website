@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkshenyu_website=self.webpackChunkshenyu_website||[]).push([[4086],{8070:function(e){e.exports=JSON.parse('{"pluginId":"download","version":"current","label":"Next","banner":"none","isLast":true,"docsSidebars":{"community":[{"type":"link","label":"2.4.0","href":"/zh/download/download-latest"}]}}')}}]);
