@@ -50,6 +50,13 @@
             <description><![CDATA[毕业一年成长成为Apache ShenYu Committer]]></description>
         </item>
         <item>
+            <title><![CDATA[【技术老兵的开源之路】]]></title>
+            <link>https://shenyu.apache.org/zh/news/Apache-ShenYu-Committer-2022-02-28</link>
+            <guid>【技术老兵的开源之路】</guid>
+            <pubDate>Sun, 28 Feb 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Open Source Path for Tech Veterans]]></description>
+        </item>
+        <item>
             <title><![CDATA[【Soul 网关发布里程碑的2.3.0版本】新增支持GRPC，Tars，Sofa协议]]></title>
             <link>https://shenyu.apache.org/zh/news/Soul-gateway-release-milestone-version-2.3.0</link>
             <guid>【Soul 网关发布里程碑的2.3.0版本】新增支持GRPC，Tars，Sofa协议</guid>

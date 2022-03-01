@@ -50,6 +50,13 @@
             <description><![CDATA[How I became an Apache ShenYu Committer one year after graduation]]></description>
         </item>
         <item>
+            <title><![CDATA[[The Open Source Path for Tech Veterans]]]></title>
+            <link>https://shenyu.apache.org/news/Apache-ShenYu-Committer-2022-02-28</link>
+            <guid>[The Open Source Path for Tech Veterans]</guid>
+            <pubDate>Sun, 28 Feb 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Open Source Path for Tech Veterans]]></description>
+        </item>
+        <item>
             <title><![CDATA[【Soul gateway release milestone version 2.3.0】New support for grpc, tars and sofa protocols!]]></title>
             <link>https://shenyu.apache.org/news/Soul-gateway-release-milestone-version-2.3.0</link>
             <guid>【Soul gateway release milestone version 2.3.0】New support for grpc, tars and sofa protocols!</guid>
