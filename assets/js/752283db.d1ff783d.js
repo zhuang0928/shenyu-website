@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkshenyu_website=self.webpackChunkshenyu_website||[]).push([[6947],{90363:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"plugin","name":"plugin","count":1,"permalink":"/blog/tags/plugin"}')}}]);
