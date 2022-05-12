@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shenyu.apache.org/news"/>
     <subtitle>Apache ShenYu (Incubating) Blog</subtitle>
-    <icon>https://shenyu.apache.org/img/favicon.ico</icon>
+    <icon>https://shenyu.apache.org/img/favicon.svg</icon>
     <entry>
         <title type="html"><![CDATA[【You can also be an Apache ShenYu Committer】]]></title>
         <id>【You can also be an Apache ShenYu Committer】</id>
