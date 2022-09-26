@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkshenyu_website=self.webpackChunkshenyu_website||[]).push([[65958],{83483:e=>{e.exports=JSON.parse('{"pluginId":"shenyuNginx","version":"cur","label":"cur","banner":"none","isLast":true,"docsSidebars":{"version-cur":[{"type":"link","label":"Overview","href":"/zh/shenyuNginx/index"}]}}')}}]);
