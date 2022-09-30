@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkshenyu_website=self.webpackChunkshenyu_website||[]).push([[59649],{99576:e=>{e.exports=JSON.parse('{"pluginId":"shenyuClientGolang","version":"current","label":"Next","banner":"none","isLast":true,"docsSidebars":{"community":[{"type":"link","label":"Http Example","href":"/shenyuClientGolang/http"}]}}')}}]);
